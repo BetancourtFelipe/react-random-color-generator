@@ -1,3 +1,4 @@
+/*
 import { useState } from 'react';
 
 const useGenerateRandomColor = () => {
@@ -8,3 +9,4 @@ const useGenerateRandomColor = () => {
   return { color, generateColor };
 };
 export default useGenerateRandomColor;
+*/
