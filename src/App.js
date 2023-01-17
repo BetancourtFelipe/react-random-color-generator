@@ -105,7 +105,7 @@ function App() {
       />
       <br />
       <br />
-
+      <h3> Generated Color:</h3>
       <div css={colorBox}>{str}</div>
     </div>
   );
