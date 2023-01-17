@@ -7,8 +7,8 @@ import Input from './Input.js';
 // CSS
 const frame = css`
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 25%;
+  left: 55%;
   width: 500px;
   height: 600px;
   margin-top: -100px;
@@ -16,7 +16,7 @@ const frame = css`
 `;
 
 const center = css`
-  text-align: center;
+  text-align: right;
 `;
 
 // Component
