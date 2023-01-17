@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 /* @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { useState } from 'react';
@@ -8,7 +7,7 @@ import Input from './Input.js';
 // CSS
 const frame = css`
   position: absolute;
-  top: 20%;
+  top: 35%;
   left: 50%;
   width: 500px;
   height: 600px;
@@ -57,7 +56,7 @@ function App() {
           text="hue"
           type="text"
           id="hue"
-          placeholder="green"
+          placeholder="blue"
           value={hue}
           onChange={onChangeHue}
         />
@@ -65,16 +64,15 @@ function App() {
       <div>
         <Input
           htmlFor="luminosity"
-          text="luminosity"
+          text="lum"
           type="text"
           id="luminosity"
-          placeholder="light"
+          placeholder="dark"
           value={luminosity}
           onChange={onChangeLuminosity}
         />
       </div>
       <br />
-
       <div>
         <Input
           htmlFor="width"
@@ -108,7 +106,6 @@ function App() {
       <br />
       <br />
 
-      <h2>Generated Color:</h2>
       <div css={colorBox}>{str}</div>
     </div>
   );
