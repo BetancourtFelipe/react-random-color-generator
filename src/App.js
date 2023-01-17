@@ -45,7 +45,7 @@ function App() {
   const colorBox = css`
     background-color: ${randomColor};
     width: ${width > 0 && width < 1000 ? width : 400}px;
-    height: ${height > 0 && height < 1000 ? height : 300}px;
+    height: ${height > 0 && height < 1000 ? height : 400}px;
   `;
 
   return (
