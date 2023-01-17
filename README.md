@@ -2,7 +2,7 @@
 
 Create your own random hex color.
 
-## How i work.
+## How i work
 
 Choose your color and luminosity by texting in the input field.
 
