@@ -1,7 +1,6 @@
 import { css } from '@emotion/react';
 import color from 'randomcolor';
 
-// CSS
 const button = css`
   padding: 15px 32px;
   text-align: center;

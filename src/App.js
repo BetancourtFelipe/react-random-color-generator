@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Button from './Button.js';
 import Input from './Input.js';
 
-// CSS
 const frame = css`
   position: absolute;
   top: 25%;
@@ -19,8 +18,7 @@ const center = css`
   text-align: right;
 `;
 
-// Component
-function App() {
+export default function App() {
   const [randomColor, setRandomColor] = useState('');
   const [hue, setHue] = useState('');
   const [luminosity, setLuminosity] = useState('');
@@ -42,17 +40,10 @@ function App() {
 
   const str = <h2 css={center}>{randomColor}</h2>;
 
-  // Declaring Emotion styles or a styled component within a React component will cause the element to get recreated, causing loss of state and other problems
-
-  // this problem will be showed. i did not had the time to ask for any solution
-  // because of me next project.
-  // i just disable the eslint for the line to let it check!
-
-  // eslint-disable-next-line no-restricted-syntax
   const colorBox = css`
     background-color: ${randomColor};
-    width: ${width > 0 && width < 1000 ? width : 400}px;
-    height: ${height > 0 && height < 1000 ? height : 400}px;
+    width: ($ {width > 0 && width < 1000 ? width: 400}px);
+    height: ($ {height > 0 && height < 1000 ? height: 400}px);
   `;
 
   return (
@@ -117,5 +108,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
